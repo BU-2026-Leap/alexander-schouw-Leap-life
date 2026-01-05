@@ -20,9 +20,6 @@ with open(input_filename) as f:
 
         # TODO: unique student count
 
-if os.path.exists(output_filename):
-    os.remove(output_filename)
-
 result = {
     "average_final": average_final,
     "unique_students": unique_students,
