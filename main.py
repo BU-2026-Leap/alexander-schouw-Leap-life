@@ -2,7 +2,11 @@ import csv
 import os
 import json
 
-input_filename = "test_scores.csv"
+from pathlib import Path
+
+full_base_path = Path(__file__).resolve().parent
+input_filename = full_base_path / "test_scores.csv"
+
 output_filename = "output.json"
 
 if os.path.exists(output_filename):
